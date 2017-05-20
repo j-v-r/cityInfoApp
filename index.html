@@ -1,0 +1,78 @@
+<!DOCTYPE Html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>City Info Map</title>
+	
+	<link rel='stylesheet' href='css/reset.css'>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
+	<link rel='stylesheet' href='css/styles.css'>
+</head>
+<body>
+	<div id='header'>
+		<div class='container'>
+			<div id='appName'>
+				<h1>Metro Info</h1>
+			</div>
+		</div>
+		<div class='container'>
+			<div id='nav'>
+				<ul>
+					<li class="selected">San Francisco</li>
+					<li>Chicago</li>
+					<li>Atlanta</li>
+					<li>Minneapolis</li>
+					<li>New York City</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id='mainSection'>
+
+		<div class='wrap'>
+			<h2>Weather</h2>
+			
+				<div id='weather'>
+				</div>
+			
+		</div>
+
+		<div class='wrap'>
+			<h2>Map</h2>
+			
+				<div id='map'>
+					<div id="mapSanFrancisco" class='maps'></div>
+					<div id="mapChicago" class='maps'></div>
+					<div id="mapAtlanta" class='maps'></div>
+					<div id="mapMinneapolis" class='maps'></div>
+					<div id="mapNYC" class='maps'></div>
+				</div>
+			
+		</div>
+		<div class='wrap'>
+			<h2>Photos</h2>
+			<div id="photos">
+
+        	</div>
+		</div>
+
+	</div>
+	<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+	 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+	<script   src="scripts/app.js"></script>
+	<!-- <script src='scripts/app.js'></script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

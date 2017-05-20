@@ -1,0 +1,142 @@
+body {
+	box-sizing: border-box;
+}
+
+div#header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: 5px solid black;
+	width: 100%;
+	padding-bottom: 1rem;
+}
+
+div#header div.container div#appName {
+	padding: 1rem 1.5rem;
+	border: 3px solid black;
+	border-radius: 10px;
+	width: 70%;
+	margin: 1rem auto;
+	background-color: lightgrey;
+}
+
+div#header div.container div#appName h1 {
+	font-size: 2rem;
+}
+
+div#header div.container div#nav ul li {
+	padding: .75rem;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 50%;
+	margin: 1rem auto;
+	font-size: 1.25rem;
+	color: blue;
+	box-shadow: 5px 5px 5px lightgrey;
+	transition: .25s;
+}
+
+div#header div.container div#nav ul li:hover,
+div#header div.container div#nav ul li.selected {
+	background-color: lightgrey;
+	color: white;
+	border-width: 3px;
+}
+
+div#mainSection {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 75%;
+	margin: 1rem auto;
+}
+
+div#mainSection h2 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	text-align: left;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+div#mainSection div#weather {
+	border: 1px solid black;
+	height: 255px;
+}
+
+div#mainSection div#weather ul li {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	}
+
+div#mainSection  div#weather ul li a {
+	text-decoration: underline;
+	color: inherit;
+	}
+
+div#mainSection div#weather img {
+	margin-top: .25rem;
+	}
+
+div#mainSection div#map {
+	border: 1px solid black;
+	height: 255px;
+	width: 95%;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+}
+
+div#mainSection div#mapSanFrancisco,
+div#mainSection div#mapChicago,
+div#mainSection div#mapAtlanta,
+div#mainSection div#mapMinneapolis,
+div#mainSection div#mapNYC {
+	height: 250px;
+	position: absolute 0 0;
+}
+
+div#mainSection div#mapChicago,
+div#mainSection div#mapAtlanta,
+div#mainSection div#mapMinneapolis,
+div#mainSection div#mapNYC {
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+div#photos {
+	height: 255px;
+    overflow: auto;
+}
+
+@media screen and (min-width: 720px) {
+	div#header	{
+		flex-direction: row;
+		width: 100%;
+	}
+
+	div#header div.container {
+		width: 50%;
+	}
+
+	div#header div.container div#nav {
+		padding: 1rem;
+	}
+
+	div#header div.container div#nav ul li {
+		display: inline-block;
+		width: 150px;
+		margin: 1rem;
+	}
+
+	div#mainSection {
+		width: 98%;
+		flex-direction: row;
+	}
+
+	div#mainSection div.wrap {
+		width: 50%;
+		display: inline;
+	}
+}
