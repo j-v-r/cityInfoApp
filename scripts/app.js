@@ -4,7 +4,7 @@ var weatherDiv = $('#weather');
 var cityButtons = $('li');
 
 function createApi() {
-	var api = 'http://api.wunderground.com/api/';
+	var api = 'https://api.wunderground.com/api/';
 	var apiKey = 'ebeab7a3a8578f14';
 
 	api += apiKey;
